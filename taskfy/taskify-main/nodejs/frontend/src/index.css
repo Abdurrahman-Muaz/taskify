@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-button .dx-button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-button .dx-button-text {
+  text-align: center;
+  margin: 0;
+}
+
+.dx-texteditor-input {
+  color: white !important;
+}
+
+.dx-placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.custom-button.dx-button.dx-button-mode-contained {
+  background-color: #43454f !important ;
+  border-color: rgb(145, 137, 137) !important;
+  border-radius: 0.5rem !important;
+  color: white !important;
+}
+
+.custom-button.dx-button.dx-button-mode-contained:hover {
+  background-color: #262626 !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+.dx-texteditor.dx-editor-outlined {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 8px !important;
+  color: white !important;
+}
+
+.dx-texteditor.dx-editor-outlined:hover {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.dx-texteditor.dx-editor-outlined.dx-state-focused {
+  border-color: white !important;
+  border-width: 2px !important;
+}
+
+.dx-texteditor.dx-editor-outlined .dx-texteditor-input {
+  color: white !important;
+}
+
+.dx-texteditor.dx-editor-outlined .dx-placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+:root {
+  --form-width: clamp(300px, 90vw, 480px);
+  --input-padding: clamp(0.5rem, 2vw, 1rem);
+  --button-height: clamp(40px, 6vh, 56px);
+}
+
+.signup-form {
+  width: var(--form-width);
+  padding: var(--input-padding);
+}
+
+.dx-texteditor-buttons-container .dx-button .dx-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.password-toggle-button.dx-button {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 8px !important;
+  z-index: 10;
+  pointer-events: auto !important;
+}
+
+.password-toggle-button .dx-icon {
+  color: white !important;
+  font-size: 18px !important;
+  opacity: 0.8;
+}
+
+.password-toggle-button:hover .dx-icon {
+  opacity: 1;
+}
+
+.dx-icon-eye:before {
+  content: "\f06e" !important;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.dx-icon-eyeoff:before {
+  content: "\f070" !important;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.dx-texteditor-buttons-container {
+  pointer-events: auto !important;
+  z-index: 5;
+}
+
+.dx-texteditor-buttons-container .dx-button {
+  pointer-events: auto !important;
+}
+
+.password-field-container {
+  position: relative;
+  width: 100%;
+}
+
+.email-field-container,
+.password-field-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.password-toggle-absolute-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 100;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-toggle-absolute-btn i {
+  font-size: 18px;
+  color: white;
+  opacity: 0.8;
+}
+
+.password-toggle-absolute-btn:hover i {
+  opacity: 1;
+}
+
+.form-container {
+  width: 250px;
+  max-width: 90vw;
+}
+
+.email-field-container .dx-texteditor,
+.password-field-container .dx-texteditor {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.dx-texteditor-container {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.dx-toolbar {
+  background-color: #262626 !important;
+  color: white !important;
+  padding: 8px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.drawer-content {
+  background-color: #1e1e1e;
+  height: 100%;
+}
+
+.dx-treeview-item {
+  color: white !important;
+  padding: 12px 16px !important;
+}
+
+.dx-treeview-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dx-treeview-item.dx-state-selected {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.menu-button .dx-icon {
+  color: white !important;
+  font-size: 24px !important;
+}
+
+.profile-button {
+  background-color: #4d6bfe !important;
+  border-color: #4d6bfe !important;
+}
